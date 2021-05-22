@@ -1,0 +1,178 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.prod-reg-container {
+    margin: 2% auto;
+    text-align: center;
+    padding: 0 1rem 1.5rem;
+    width: 60%;
+    background-color: #fff;
+    border: 1px solid #4B778D;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px rgb(75, 119, 141, 30%);
+}
+
+.prod-reg-header {
+    color: #4B778D;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.grid1,
+.grid2 {
+    display: grid;
+}
+
+.grid1 input{
+    margin: 8px auto;
+    text-align: center;
+    width: 68%;
+    height: 24px;
+}
+
+.grid2 label{
+    margin: 2px auto;
+    text-align: center;
+    height: 0;
+}
+
+.grid2 input{
+    margin: 2px auto;
+    text-align: center;
+    width: 68%;
+    height: 24px;
+}
+
+#grid3 {
+    grid-template-columns: 1;
+}
+
+.submit-btn {
+    padding: 8px;
+    margin: 50px auto 10px;
+    height: 40px;
+    width: 30%;
+    background: #fff;
+    border: 2px solid #28B5B5;
+}
+
+.submit-btn:hover {
+    color: #fff;
+    background: #28B5B5;
+    cursor: pointer;
+}
+
+/* CSS alert box */
+.alert {
+    padding: 20px;
+    background-color: #28B5B5;
+    color: white;
+    margin-bottom: 1rem;
+}
+  
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+/* Navbar CSS */
+.sidebar {
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #28B5B5;
+    overflow-x: hidden;
+    padding-top: 50px;
+    transition: 0.5s;
+}
+  
+.sidebar a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidebar a:hover {
+    color: #000000;
+}
+  
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #28B5B5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #4B778D;
+}
+
+#main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+}
+
+.dropdown-btn {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+.dropdown-btn:hover {
+    color: #000000;
+}
+
+.active {
+    background-color: #28B5B5;
+    color: white;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: #4B778D;
+    padding-left: 8px;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}

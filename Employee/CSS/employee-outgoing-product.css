@@ -1,0 +1,259 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: 2% auto;
+    width: 85%;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px rgb(75, 119, 141, 30%);
+}
+
+/* Outgoing Product Header */
+.outgoing-product-h1 {
+    text-align: center;
+    color: #4B778D;
+}
+
+/* Labels */
+label {
+    margin-left: 3rem;
+}
+
+/* Table CSS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #28B5B5;
+    font-size: 16px;
+    text-align: left;
+    position: sticky;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+tr {
+    font-size: 14px;
+    border-top: 2px solid #808080;
+    height: 3rem;
+    margin-bottom: 5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.search-form{
+    text-align: center;
+}
+
+.received-form{
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+#search{
+    height: 21px;
+    width: 40%;
+}
+
+#received{
+    height: 21px;
+    width: 40%;
+}
+
+.received-btn, .search-btn {
+    padding: 0.2rem 1rem;
+    margin: 0.5rem auto;
+}
+
+@media screen and (max-width: 1080px) {
+    .outgoing-product-grid {
+        display: block;
+    }
+
+    table {
+        display: block;
+        margin-top: -20vh;
+    }
+
+    thead {
+        display: block;
+        position: relative;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    th {
+        display: block;
+    }
+
+    tbody {
+        display: block;
+    }
+
+    td {
+        display: block;
+        text-align: left;
+
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    td:nth-of-type(1):before { content: "Date"; }
+    td:nth-of-type(2):before { content: "Brand Name"; }
+    td:nth-of-type(3):before { content: "Type"; }
+    td:nth-of-type(4):before { content: "Model"; }
+    td:nth-of-type(5):before { content: "Quantity"; }
+
+    tr {
+        display: block;
+        margin-bottom: 6.6rem;
+    }
+}
+
+
+/* Sidebar CSS */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #28B5B5;
+    overflow-x: hidden;
+    padding-top: 50px;
+    transition: 0.5s;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #000000;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #28B5B5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #4B778D;
+}
+
+#main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+}
+
+.dropdown-btn {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+.dropdown-btn:hover {
+    color: #000000;
+}
+
+.active {
+    background-color: #28B5B5;
+    color: white;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: #4B778D;
+    padding-left: 8px;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.refresh {
+    margin: 5rem 0 0 0;
+    text-decoration: none;
+    color: #28B5B5;
+}
+
+.refresh:hover {
+    text-decoration: underline;
+}
+
+/* CSS alert box */
+.alert {
+    padding: 20px;
+    background-color: #28B5B5;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: black;
+}

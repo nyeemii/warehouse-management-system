@@ -1,0 +1,181 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #28B5B5;
+    overflow-x: hidden;
+    padding-top: 50px;
+    transition: 0.5s;
+}
+  
+.sidebar a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidebar a:hover {
+    color: #000000;
+}
+  
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #28B5B5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #4B778D;
+}
+
+#main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+}
+
+.dropdown-btn {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+.dropdown-btn:hover {
+    color: #000000;
+}
+
+.active {
+    background-color: #28B5B5;
+    color: white;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: #4B778D;
+    padding-left: 8px;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.container {
+    margin: 2% auto;
+    width: 60%;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px rgb(75, 119, 141, 30%);
+}
+
+.BH-header {
+    text-align: center;
+    color: #4B778D;
+}
+
+.form {
+    padding-bottom: 1rem;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+/* Table CSS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #28B5B5;
+    font-size: 16px;
+    text-align: left;
+    position: sticky;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+tr {
+    font-size: 14px;
+    border-top: 2px solid #808080;
+    height: 3rem;
+    margin-bottom: 5rem;
+}
+
+.total-price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.grid-2 {
+    justify-self: end;
+}
+
+.submit-div {
+    width: 95%;
+    text-align: right;
+    margin: auto;
+}
+
+.submit {
+    width: 10rem;
+}
+
+/* CSS alert box */
+.alert {
+    padding: 20px;
+    background-color: #28B5B5;
+    color: white;
+    margin-bottom: 1rem;
+}
+  
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: black;
+}

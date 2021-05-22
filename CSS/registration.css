@@ -1,0 +1,246 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Registration Container */
+.registration-container {
+    margin: 10vh auto;
+    width: 60%;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px rgb(75, 119, 141, 30%);
+}
+
+/* Registration Header */
+.registration-h1 {
+    text-align: center;
+    color: #4B778D;
+}
+
+/* Registration Grid */
+.registration-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+/* Inputs */
+input[type=text], 
+[type=date],
+input[type=email],
+select {
+    display: block;
+    width: 70%;
+    height: 2rem;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    padding-left: 0.5rem;
+    margin: 0 0 1rem 3rem;
+}
+
+input:focus {
+    box-shadow: 1px 1px 10px 1px rgb(75, 119, 141, 30%);
+}
+
+/* Button Div */
+.button-div {
+    text-align: center;
+}
+
+input[type=submit] {
+    color: #28B5B5;
+    padding: 1rem;
+    width: 50%;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    background-color: #e1e5ea;
+}
+
+
+/* Labels */
+label {
+    margin-left: 3rem;
+}
+
+/* Address Textbox */
+.address {
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    .registration-h1 {
+        font-size: 20px;
+    }
+    
+    .registration-container {
+        padding: 2rem;
+    }
+    
+    .registration-grid {
+      display: block;
+    }
+
+    input[type=text], 
+    [type=date],
+    input[type=email],
+    select {
+        margin: 0 0 1rem 0;
+        width: 100%;
+    }
+
+    label {
+        margin-left: 0;
+        font-size: 10px;
+    }
+}
+
+/* CSS alert box */
+.alert {
+    padding: 20px;
+    background-color: #28B5B5;
+    color: white;
+    margin-bottom: 1rem;
+}
+  
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+/* Sidenav */
+.sidebar {
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #28B5B5;
+    overflow-x: hidden;
+    padding-top: 50px;
+    transition: 0.5s;
+}
+  
+.sidebar a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidebar a:hover {
+    color: #000000;
+}
+  
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #28B5B5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #4B778D;
+}
+
+#main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+}
+
+.dropdown-btn {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+.dropdown-btn:hover {
+    color: #000000;
+}
+
+.active {
+    background-color: #28B5B5;
+    color: white;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: #4B778D;
+    padding-left: 8px;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+/* Modal */
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 60%; 
+  }
+
+  .modal-content > p {
+    font-size: 14px;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
